@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  document.querySelector('form').addEventListener('submit', (e) =>{
+  let taskList = document.querySelector('form')
+  taskList.addEventListener('submit', (e) =>{
     e.preventDefault()
     handleToDo(document.querySelector('#new_task').value)
     taskList.reset()
